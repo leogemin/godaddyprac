@@ -4,6 +4,7 @@ $accent-color: #00838C;
 $secondary-color: #09757A;
 $light-blue: #D8EFEF;
 $dark-grey: #111111;
+$nav-bg: #2b2b2b;
 
 // Global Styles
 
@@ -15,9 +16,31 @@ $dark-grey: #111111;
 
 // Mobile (main styling)
 nav {
-     background-color: $dark-grey;
-     height: 70px;
+     background-color: $nav-bg;
+     height: 60px;
      display: flex;
      align-items: center;
      padding: .5em;
+     gap: .5em;
+     
+     .desktop {
+          display: none;
+     }
+     .mobile {
+          display: block;
+     }
+}
+
+// Tablets
+@media (min-width: 768px) {
+
+}
+
+// Desktop
+@media (min-width: 1024px) {
+     nav {
+          .desktop {
+               display: block;
+          }
+     }
 }
