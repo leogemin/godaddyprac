@@ -12,3 +12,12 @@ $dark-grey: #111111;
      padding: 0;
      box-sizing: border-box;
 }
+
+// Mobile (main styling)
+nav {
+     background-color: $dark-grey;
+     height: 70px;
+     display: flex;
+     align-items: center;
+     padding: .5em;
+}
