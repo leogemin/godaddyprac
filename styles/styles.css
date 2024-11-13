@@ -53,7 +53,7 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   font-size: 1rem;
-  padding: 1em 0 1em 1.2em;
+  padding: 0.8em 0 0.8em 1.2em;
 }
 .searchBar__input::-moz-placeholder {
   font-weight: 500;
@@ -77,8 +77,8 @@
 .banner {
   padding: 0 1em;
   display: grid;
-  grid-template-rows: 2fr 1fr;
-  min-height: 82vh;
+  grid-template-rows: 5fr 2fr;
+  min-height: 83vh;
   gap: 1em;
 }
 .banner__panel {
@@ -119,6 +119,28 @@
 }
 .banner__panel_second {
   background-color: #111111;
+  color: white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1em;
+}
+.banner__panel_second__left__tag {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  background-color: #D8EFEF;
+  color: #111111;
+}
+.banner__panel_second__left > h5 {
+  margin: 0.8em 0;
+}
+.banner__panel_second__left__mainText {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  width: 65%;
 }
 
 .grey_btn {

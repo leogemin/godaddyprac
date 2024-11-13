@@ -66,7 +66,7 @@ $nav-bg: #2b2b2b;
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
           font-size: 1rem;
-          padding: 1em 0 1em 1.2em;
+          padding: .8em 0 .8em 1.2em;
           &::placeholder {
                font-weight: 500;
           }
@@ -88,8 +88,8 @@ $nav-bg: #2b2b2b;
 .banner{
      padding: 0 1em;
      display:grid;
-     grid-template-rows: 2fr 1fr;
-     min-height: 82vh;
+     grid-template-rows: 5fr 2fr;
+     min-height: 83vh;
      gap: 1em;
      &__panel {
           border-radius: 20px;
@@ -130,6 +130,31 @@ $nav-bg: #2b2b2b;
 
           &_second {
                background-color: $dark-grey;
+               color: white;
+               display: grid;
+               grid-template-columns: auto 1fr;
+               align-items: center;
+               padding: 1em;
+               &__left {
+                    &__tag {
+                         padding: 2px 5px;
+                         border-radius: 5px;
+                         font-size: .8rem;
+                         letter-spacing: 1px;
+                         background-color: $light-blue;
+                         color: $dark-grey;
+                    }
+                    & > h5 {
+                         margin: .8em 0;
+                    }
+                    &__mainText {
+                         font-family: 'Playfair Display', serif;
+                         font-weight: 900;
+                         font-size: 1.3rem;
+                         width: 65%;
+                    }
+               }
+               
           }
      }
 }
