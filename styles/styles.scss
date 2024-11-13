@@ -94,7 +94,11 @@ $nav-bg: #2b2b2b;
      &__panel {
           border-radius: 20px;
           &_first {
-               background-color: $accent-color;
+               // background-color: $accent-color;
+               background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait");
+               background-position: center bottom;
+               background-size: cover;
+               background-repeat: no-repeat;
                display: flex;
                flex-direction: column;
                gap: .5em;
@@ -106,8 +110,21 @@ $nav-bg: #2b2b2b;
                     font-size: 2rem;
                     font-weight: 900;
                }
-               & > h5 {
+               & > h6 {
+                    padding: 5px;
                     font-weight: normal;
+               }
+               &__price_link {
+                    text-decoration: none;
+                    color: $dark-grey;
+                    font-size: 0.9rem;
+                    padding: .5em;
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+               }
+               &__disclaimer {
+                    font-size: .7rem;
                }
           }
 

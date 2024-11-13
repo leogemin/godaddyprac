@@ -85,7 +85,10 @@
   border-radius: 20px;
 }
 .banner__panel_first {
-  background-color: #00838C;
+  background-image: url("https://img1.wsimg.com/cdnassets/transform/4c5fe153-b3a2-416e-b772-cfd315360e36/row-mrq-hp-portrait");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -98,8 +101,21 @@
   font-size: 2rem;
   font-weight: 900;
 }
-.banner__panel_first > h5 {
+.banner__panel_first > h6 {
+  padding: 5px;
   font-weight: normal;
+}
+.banner__panel_first__price_link {
+  text-decoration: none;
+  color: #111111;
+  font-size: 0.9rem;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.banner__panel_first__disclaimer {
+  font-size: 0.7rem;
 }
 .banner__panel_second {
   background-color: #111111;
