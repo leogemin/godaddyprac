@@ -53,7 +53,7 @@ $nav-bg: #2b2b2b;
      }
 }
 
-.searchBar {
+.search_bar {
      margin: .5em 1em;
      display: flex;
      border-radius: 5px;
@@ -158,6 +158,18 @@ $nav-bg: #2b2b2b;
           }
      }
 }
+.recommendations {
+     padding: 2em;
+     &__title {
+          text-align: center;
+     }
+}
+
+.footer {
+     margin-top: 15px;
+     background-color: $dark-grey;
+     height: 500px;
+}
 
 .grey_btn {
      background-color: $dark-grey;
@@ -176,7 +188,7 @@ $nav-bg: #2b2b2b;
 
 // Desktop
 @media (min-width: 1024px) {
-     nav {
+     .nav {
           .desktop {
                display: block;
           }
