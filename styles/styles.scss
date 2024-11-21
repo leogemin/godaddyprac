@@ -9,6 +9,7 @@ $secondary-color: #09757A;
 $light-blue: #D8EFEF;
 $dark-grey: #111111;
 $nav-bg: #2b2b2b;
+$light-gray: #f5f7f8;
 
 // Global Styles
 
@@ -57,7 +58,7 @@ $nav-bg: #2b2b2b;
      margin: .5em 1em;
      display: flex;
      border-radius: 5px;
-     box-shadow: 0 0 2px $nav-bg;
+     box-shadow: 0 0 3px lightgray;
      overflow: hidden;
      &__input {
           border: 2px solid white;
@@ -146,10 +147,10 @@ $nav-bg: #2b2b2b;
                     }
                     & > h5 {
                          margin: .8em 0;
+                         font-weight: 500;
                     }
                     &__mainText {
-                         font-family: 'Playfair Display', serif;
-                         font-weight: 900;
+                         font-weight: 500;
                          font-size: 1.3rem;
                          width: 65%;
                     }
@@ -159,9 +160,153 @@ $nav-bg: #2b2b2b;
      }
 }
 .recommendations {
-     padding: 2em;
+     padding: 3em 0;
      &__title {
+          padding: .5em 0;
           text-align: center;
+          font-size: 1.8rem;
+          font-weight: 500;
+     }
+     &__menu {
+          display: flex;
+          list-style: none;
+          overflow-x: auto;
+          gap: .5em;
+          padding: 1.5em 1em;
+          &__option {
+               label {
+                    padding: .7em 1em;
+                    border: 2px solid lightgray;
+                    border-radius: 50px;
+                    align-content: center;
+                    font-size: .9rem;
+                    text-wrap: nowrap;
+                    font-weight: 500;
+                    transition: .2s ease-in-out;
+               }
+               input[type="radio"] {
+                    display: none;
+               }
+               input[type="radio"]:checked ~ label {
+                    background-color: $dark-grey;
+                    border: 2px solid $dark-grey;
+                    color: white;
+               }
+          }
+     }
+     &__links {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 4fr 3fr;
+          gap: .5em;
+          padding: 1em;
+          height: 400px;
+          &__block {
+               &:first-child {
+                    grid-column: span 2;
+                    font-size: 1rem;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    background-color: $light-blue;
+                    svg {
+                         align-self: flex-start;
+                    }
+               }
+               font-size: .8rem;
+               padding: 1em;
+               background-color: $light-gray;
+               border-radius: 10px;
+               display: flex;
+               flex-direction: column-reverse;
+               justify-content: space-between;
+               svg {
+                    align-self: flex-end;
+               }
+               h3 {
+                    font-weight: 500;
+                    padding-right: 1em;
+               }
+          }
+     }
+}
+.start_container {
+     display: flex;
+     flex-direction: column;
+     padding: 2em 0;
+     &__title {
+          padding: 0 .5em;
+          font-size: 1.8rem;
+          font-weight: 500;
+          text-align: center;
+     }
+     &__slider {
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+          display: flex;
+          overflow-x: auto;
+          padding: 1em;
+          gap: 1em;
+          
+          &__card {
+               scroll-snap-align: center;
+               flex-shrink: 0;
+               border-radius: 10px;
+               display: grid;
+               grid-template-rows: 1fr 1fr;
+               width: 85vw;
+               gap: 1em;
+               overflow: hidden;
+               background-color: $light-gray; 
+               img {
+                    width: 100%;
+               }
+               &__content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5em;
+
+                    h3 {
+                         padding: 0 20px;
+                         font-weight: 500;
+                         font-size: 1.3rem;
+                    }
+                    p {
+                         padding: 0 20px;
+                         font-size: .9rem;
+                    }
+               }
+          }
+     }
+     &__button {
+          background-color: $dark-grey;
+          color: white;
+          border-radius: 5px;
+          padding: 1.2em 4em;
+          margin: 1em auto;
+          font-weight: 500;
+          border: unset;
+     }
+}
+.roletape {
+     padding: 2em 1em;
+     &__title {
+          font-size: 1.8em;
+          font-weight: 500;
+     }
+     &__card {
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+               width: 100%;
+          }
+
+          &__content {
+               padding: 1em 1.7em;
+               &__quote {
+                    font-weight: 500;
+                    font-size: 1.25rem;
+               }
+          }
      }
 }
 
