@@ -423,11 +423,87 @@ $light-gray: #f5f7f8;
           }
      }
 }
+.disclaimer {
+     padding: 1em;
+     font-size: .9rem;
+     &__police {
+          color: black;
+          font-weight: 500;
+     }
+     &__text {
+          margin-top: 1em;
+     }
+}
 
 .footer {
      margin-top: 15px;
      background-color: $dark-grey;
-     height: 500px;
+     padding: 1em 0;
+     &__menu {
+          &__dropdown {
+               padding: 1em 1em;
+               &__header {
+                    padding: .5em 0;
+                    font-size: .85rem;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+               }
+               &__content {
+                    list-style: none;
+                    &__option {
+                         padding: .75em 0;
+                         font-size: .75rem;
+                         color: #9f9f9f;
+                    } 
+               }
+          }
+     }
+     &__logo {
+          border-top: 1px solid $nav-bg;
+          padding: 1em 0;
+          svg {
+               padding: 0 1em;
+          }
+     }
+     &__selects {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1em;
+          padding: 1em 2em;
+          border-top: 2px solid $light-gray;
+          select {
+               background: unset;
+               border: unset;
+               color: white;
+               font-size: 1rem;
+          }
+          &__wrapper {
+               display: flex;
+               justify-content: center;
+          }
+     }
+     &__socials {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          list-style: none;
+          padding: 1em 2em;
+          border-bottom: 1px solid $nav-bg;
+          li {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+     }
+     &__polices {
+          padding: 1em;
+          p {
+               text-align: center;
+               color: white;
+               font-size: .8rem;
+               padding: 1em 0;
+          }
+     }
 }
 
 .grey_btn {
